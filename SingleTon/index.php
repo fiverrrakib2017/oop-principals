@@ -1,13 +1,19 @@
 <?php
 
 class Database{
+    protected static $instance=NULL;
     public function __construct(){
         echo "connect<br>";
     }
+    public static function connect(){
+        if (isset(Database::$instance)==null) {
+            self::$instance = new Database();
+        }
+        return Database::$instance;
+    }
 }
 
-$db=new Database();
-$db=new Database();
-$db=new Database();
-$db=new Database();
-$db=new Database();
+Database::connect();
+Database::connect();
+Database::connect();
+Database::connect();
