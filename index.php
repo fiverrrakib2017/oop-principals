@@ -74,6 +74,12 @@ echo "<br>";
 echo "<br>";
 
 
-include 'open_close_principals.php';
+// include 'open_close_principals.php';
+
+
+echo "<br>";
+echo "<br>";
+echo "<br>";
+include 'Product/Show_Product.php';
 
 ?>
